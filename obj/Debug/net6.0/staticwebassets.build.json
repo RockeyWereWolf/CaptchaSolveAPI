@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zeRlCTIeqHbRoKQdn2jg4CwbKvsgb6YCkafCEU5GH8E=",
+  "Source": "CaptchaSolverApi",
+  "BasePath": "_content/CaptchaSolverApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

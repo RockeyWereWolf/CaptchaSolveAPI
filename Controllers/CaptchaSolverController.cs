@@ -35,10 +35,12 @@ namespace CaptchaSolverApi.Controllers
                 var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
                 var shadowHost = wait.Until(d => d.FindElement(By.Id("parent")));
 
-                var shadowRoot = shadowHost.FindElement(By.CssSelector("div.turnstile_container > div.turnstile > div#example-container5 > div")).GetShadowRoot();
+                var shadowRoot = shadowHost.FindElement(By.CssSelector("div#example-container5 > div")).GetShadowRoot();
 
                 var iframe = shadowRoot.FindElement(By.CssSelector("iframe"));
                 driver.SwitchTo().Frame(iframe);
+
+                await Task.Delay(2000);
 
                 var secondShadowHost = driver.FindElement(By.CssSelector("body"));
 

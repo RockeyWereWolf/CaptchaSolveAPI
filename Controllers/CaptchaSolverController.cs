@@ -40,8 +40,6 @@ namespace CaptchaSolverApi.Controllers
                 var iframe = shadowRoot.FindElement(By.CssSelector("iframe"));
                 driver.SwitchTo().Frame(iframe);
 
-                await Task.Delay(2000);
-
                 var secondShadowHost = driver.FindElement(By.CssSelector("body"));
 
                 var secondShadowRoot = secondShadowHost.GetShadowRoot();
